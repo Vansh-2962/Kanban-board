@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanban board</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="board-header">
+      <h2 id="title">Kanban board</h2>
+      <div class="btns">
+        <button id="add-new-card">+ Add new card</button>
+        <button id="add-new-board">+ Add new board</button>
+      </div>
+    </div>
+    <main class="container">
+      <section class="board">
+        <header class="board-header">
+          <div class="header-title">
+            <p class="circle" id="todo-circle"></p>
+            <h4>Todo</h4>
+          </div>
+          <div class="display">
+            <p id="todo-count"></p>
+            <button class="del-btn">Delete</button>
+          </div>
+        </header>
+
+        <!-- todo-cards -->
+        <div class="todo-cards"></div>
+      </section>
+
+      <section class="board">
+        <header class="board-header">
+          <div class="header-title">
+            <p class="circle" id="in-progress-circle"></p>
+            <h4>In Progress</h4>
+          </div>
+          <div class="display">
+            <p id="in-progress-count"></p>
+            <button class="del-btn">Delete</button>
+          </div>
+        </header>
+        <!-- progress-cards -->
+        <div class="todo-cards"></div>
+      </section>
+
+      <section class="board">
+        <header class="board-header">
+          <div class="header-title">
+            <p class="circle" id="completed-circle"></p>
+            <h4>Completed</h4>
+          </div>
+          <div class="display">
+            <p id="completed-count"></p>
+            <button class="del-btn">Delete</button>
+          </div>
+        </header>
+        <!-- completed-cards -->
+        <div class="todo-cards"></div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
