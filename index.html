@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kanban board</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
     <div class="board-header">
@@ -22,8 +26,9 @@
             <h4>Todo</h4>
           </div>
           <div class="display">
-            <p id="todo-count"></p>
-            <button class="del-btn">Delete</button>
+            <p id="todo-count" class="cards-count"></p>
+            <button class="del-btn"><i class="fa-solid fa-trash"></i></button>
+            <button class="edit-board-btn del-btn"><i class="fa-solid fa-pen"></i></button>
           </div>
         </header>
 
@@ -38,8 +43,11 @@
             <h4>In Progress</h4>
           </div>
           <div class="display">
-            <p id="in-progress-count"></p>
-            <button class="del-btn">Delete</button>
+            <p id="in-progress-count" class="cards-count"></p>
+            <button class="del-btn"><i class="fa-solid fa-trash"></i></button>
+            <button class="edit-board-btn del-btn">
+              <i class="fa-solid fa-pen"></i>
+            </button>
           </div>
         </header>
         <!-- progress-cards -->
@@ -53,8 +61,11 @@
             <h4>Completed</h4>
           </div>
           <div class="display">
-            <p id="completed-count"></p>
-            <button class="del-btn">Delete</button>
+            <p id="completed-count" class="cards-count"></p>
+            <button class="del-btn"><i class="fa-solid fa-trash"></i></button>
+            <button class="edit-board-btn del-btn">
+              <i class="fa-solid fa-pen"></i>
+            </button>
           </div>
         </header>
         <!-- completed-cards -->
